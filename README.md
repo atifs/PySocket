@@ -11,7 +11,7 @@ Member Variables:
 self.socket - The socket.  
 
 Methods:
-__init__ accepts three arguments.  The server to connect to, the connection port, and how packets are terminated.  For 
+constructor accepts three arguments.  The server to connect to, the connection port, and how packets are terminated.  For 
 instance, if "hello world#" is a packet, then the termination string will be "#".
 
 cleanup() will handle closing the socket and call on_exit().  
