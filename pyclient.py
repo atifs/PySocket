@@ -57,7 +57,6 @@ class PyClient(object):
         Called upon disconnect by the handler. 
         Additionally, return 1 if we have reconnected.  Return 0 to
         remove the PyClient from the list of sockets
-        Note: socket is closed by caller
         """
         pass
 
