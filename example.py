@@ -44,7 +44,7 @@ class Client(PyClient):
     def on_exit(self):
         print 'Goodbye...'
 
-# Remember to call connect or listen before adding the pycls to the handler
+# Remember to call connect or listen before or after adding the pycls to the handler
 
 client = Client('yahoo.com', 80, '\n')
 handler = PyHandler()
