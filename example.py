@@ -36,6 +36,7 @@ class Client(PyClient):
         
     def on_disconnect(self):
         print 'd/c'
+        # we're done and don't want to reconnect, return 0 so the handler can cleanup this socket
         return 0
 
     def packet_recv(self, packet):
