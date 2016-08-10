@@ -20,7 +20,7 @@ The following can/should be overloaded:
 
 on_connect can be overloaded and is called upon connection
 
-on_disconnect is called upon disconnect.  The socket is closed by the caller.  If you wish to reconnect, you can do so here.
+on_disconnect is called upon disconnect.  The socket is closed by the caller.  If you wish to reconnect, you can do so here.  Otherwise, if you are not reconnecting, return 0 and the handler will cleanup your socket and call your cleanup method as well.
 
 on_exit is called when its time to exit.  Do not attempt to reconnect here.
 
